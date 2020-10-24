@@ -7,10 +7,6 @@ body {
     margin: 0 auto;
 }
 
-p {
-    font-size: 40px;
-}
-
 /* ---------- Main wrapper structure------------ */
 .main--wrapper {
     width: 100%;
