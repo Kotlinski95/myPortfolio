@@ -17,7 +17,8 @@ body {
 /* ---------- Header wrapper structure------------ */
 .main-header__wrapper,
 .main-header__navigation,
-.main-header__navigation-pages {
+.main-header__navigation-pages,
+.main-personal__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,6 +48,7 @@ body {
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+    z-index: 10;
 }
 
 .main-header__wrapperUp {
@@ -72,13 +74,13 @@ body {
     min-height: 70px;
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
-    font: 20px 'Lato', sans-serif ;
+    font: 20px 'Lato', sans-serif;
     margin: 20px 10% 20px 2%;
     padding: 0px 20px 0px 2%;
     border-radius: 10px 10px;
     -webkit-box-shadow: 5px 5px 5px #a5a1a1;
     box-shadow: 5px 5px 5px #a5a1a1;
-    background: url('../images/_elementy_gradient_menu.jpg') no-repeat 0px/cover ;
+    background: url('../images/_elementy_gradient_menu.jpg') no-repeat 0px/cover;
 }
 
 .main-header__navigation-pages {
@@ -138,4 +140,169 @@ body {
 
 .main-content__wrapper {
     padding-top: 100px;
+}
+
+
+/* -------------------- Personal info page ------------------------- */
+.main-programmer__characteristic {
+    min-height: calc(100vh - 100px);
+    margin-top: 100px;
+    width: 100%;
+}
+
+.main-introduction__wrapper {
+    min-height: 550px;
+}
+
+.main-introduction__picture {
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    z-index: 0;
+}
+
+.main-introduction__picture img {
+    width: 350px;
+    height: 458px;
+    border-radius: 10px;
+}
+
+.main-personal__aboutMe-wrapper {
+    flex-basis: 50%;
+    margin: 20px 20px 20px 10%;
+    padding: 10px 20px;
+    min-height: 400px;
+}
+
+
+.main-introduction__businessCard {
+    max-width: 50%;
+    min-width: 400px;
+    max-height: 250px;
+    min-height: 200px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 10px 10px;
+    position: absolute;
+    top: 270px;
+    right: 20%;
+    box-shadow: 2px 2px 3px rgb(167, 165, 165);
+}
+
+.main-introduction__businessCard-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-introduction__businessCard-footer img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.main-introduction__businessCard-footer span {
+    display: inline-block;
+}
+
+.main-introduction__contact-wrapper {
+    max-width: 350px;
+    max-height: 170px;
+    position: absolute;
+    top: 458px;
+    right: 20%;
+    padding-top: 10px;
+}
+
+.main-introduction__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-introduction__contact-hire,
+.main-introduction__contact-CV {
+    min-height: 35px;
+    flex-basis: 50%;
+    margin: 0 auto;
+    background: url('../images/button_01.png') no-repeat 0px/cover;
+    margin: 0px 10px;
+    border-radius: 3px 3px;
+    box-shadow: 2px 2px 2px #a7a6a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main-personal__aboutMe-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-personal__aboutMe-footer img {
+    max-height: 70px;
+    max-width: 150px;
+}
+
+.main-personal__skills-wrapper {
+    flex-basis: 50%;
+    margin: 20px 10% 20px 20px;
+    padding: 10px 20px;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px 3px rgb(167, 165, 165);
+}
+
+.main-personal__skills {
+    padding: 20px;
+}
+
+.main-skill {
+    background-color: rgba(225, 225, 225, 0.35);
+    border-radius: 6px;
+    margin: 10px 70px 10px 5px;
+    display: flex;
+    color: #ffffff;
+}
+
+.main-skills__HTML,
+.main-skills__CSS,
+.main-skills__JS,
+.main-skills__React,
+.main-skills__TS{
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgb(167, 165, 165);
+    background: url('../images/_elementy_gradient_menu.jpg') no-repeat 0px/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 110px;
+}
+
+.main-skills__HTML {
+    flex-basis: 90%;
+}
+.main-skills__CSS {
+    flex-basis: 90%;
+}
+.main-skills__JS {
+    flex-basis: 70%;
+}
+.main-skills__React {
+    flex-basis: 20%;
+}
+.main-skills__TS {
+    flex-basis: 20%;
+}
+
+.main-content__circle1{
+
+}
+.main-content__circle2{
+
+}
+.main-content__circle2{
+
 }
