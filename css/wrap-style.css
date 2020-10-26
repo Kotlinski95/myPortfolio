@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
 /* ---------- HTML Markup styles------------ */
 html {
     scroll-behavior: smooth;
@@ -7,6 +8,11 @@ html {
 
 body {
     margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    font-size: 18px;
 }
 
 /* ---------- Main wrapper structure------------ */
@@ -20,7 +26,12 @@ body {
 .main-header__wrapper,
 .main-header__navigation,
 .main-header__navigation-pages,
-.main-personal__wrapper {
+.main-personal__wrapper,
+.main-introduction__contact,
+.main-introduction__contact-hire,
+.main-introduction__contact-CV,
+.main-introduction__businessCard-footer,
+.main-personal__aboutMe-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -76,7 +87,7 @@ body {
     min-height: 70px;
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
-    font: 20px 'Lato', sans-serif;
+    font: 22px 'Lato', sans-serif;
     margin: 20px 10% 20px 2%;
     padding: 0px 20px 0px 2%;
     border-radius: 10px 10px;
@@ -152,6 +163,15 @@ body {
     width: 100%;
 }
 
+.main-content__circle1 img,
+.main-content__circle2 img,
+.main-content__circle3 img,
+.main-introduction__picture,
+.main-introduction__businessCard,
+.main-introduction__contact-wrapper {
+    position: absolute;
+}
+
 .main-introduction__wrapper {
     min-height: 650px;
 }
@@ -165,12 +185,10 @@ body {
 
 .main-introduction__picture {
     background: url('../images/sandpaper.png') no-repeat 0px/cover;
-    position: absolute;
     top: 150px;
     left: 10%;
     z-index: 0;
 }
-
 
 .main-introduction__businessCard {
     max-width: 50%;
@@ -179,7 +197,6 @@ body {
     min-height: 200px;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 10px 10px;
-    position: absolute;
     padding: 10px;
     top: 270px;
     right: 12%;
@@ -187,8 +204,6 @@ body {
 }
 
 .main-introduction__businessCard-footer {
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
 }
 
@@ -204,48 +219,36 @@ body {
 .main-introduction__contact-wrapper {
     max-width: 350px;
     max-height: 170px;
-    position: absolute;
     top: 540px;
     right: 12%;
     padding-top: 10px;
 }
 
-.main-introduction__contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .main-introduction__contact-hire,
 .main-introduction__contact-CV {
-    min-height: 35px;
+    min-height: 45px;
     flex-basis: 50%;
     margin: 0 auto;
     background: url('../images/button_01.png') no-repeat 0px/cover;
     margin: 0px 10px;
     border-radius: 3px 3px;
-    box-shadow: 2px 2px 2px #a7a6a5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 2px 2px 5px #a7a6a5;
     color: white;
 }
 
 .main-personal__aboutMe-wrapper,
-.main-personal__skills-wrapper
- {
+.main-personal__skills-wrapper {
     flex-basis: 50%;
     padding: 10px 20px;
-    min-height: 450px;
+    min-height: 550px;
 }
-.main-personal__aboutMe-wrapper{
+
+.main-personal__aboutMe-wrapper {
     margin: 20px 20px 20px 10%;
 }
 
 
 .main-personal__aboutMe-footer {
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
 }
 
@@ -277,7 +280,7 @@ body {
 .main-skills__CSS,
 .main-skills__JS,
 .main-skills__React,
-.main-skills__TS{
+.main-skills__TS {
     padding: 5px;
     border-radius: 6px;
     box-shadow: 2px 2px 4px rgb(167, 165, 165);
@@ -285,58 +288,55 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    min-width: 110px;
+    min-width: 130px;
 }
 
-.main-skills__HTML {
-    flex-basis: 90%;
-}
+.main-skills__HTML,
 .main-skills__CSS {
     flex-basis: 90%;
 }
+
 .main-skills__JS {
     flex-basis: 70%;
 }
-.main-skills__React {
-    flex-basis: 20%;
-}
+
+.main-skills__React,
 .main-skills__TS {
-    flex-basis: 20%;
+    flex-basis: 30%;
 }
 
-.main-content__circle1 img{
-    position: absolute;
-    top: 18%;
+.main-content__circle1 img {
+    top: 25%;
     right: 0px;
-    max-width: 25vw;
-    max-height: 25vw;
+    max-width: 28%;
+    max-height: 28%;
     z-index: -1;
 }
-.main-content__circle2 img{
-    position: absolute;
+
+.main-content__circle2 img {
     top: 48%;
     left: 30%;
     max-width: 25%;
     max-height: 25%;
     z-index: -1;
 }
-.main-content__circle3 img{
-    position: absolute;
+
+.main-content__circle3 img {
     top: 100px;
     left: 0px;
-    max-width: 15vw;
-    max-height: 15vw;
+    max-width: 20%;
+    max-height: 20%;
     z-index: 1;
 }
 
-.main-p-title{
-    color: rgba(238, 146, 61,0.5);
+.main-p-title {
+    color: rgba(238, 146, 61, 0.5);
     font-size: 32px;
     margin: 0px 10px;
 }
 
 .main-p-description,
-li{
+li {
     color: #4e320b;
     font-size: 19px;
 }
@@ -344,6 +344,6 @@ li{
 .main-p-description,
 .main-p-title,
 h1,
-h2{
+h2 {
     font-family: 'Lato', sans-serif;
 }
