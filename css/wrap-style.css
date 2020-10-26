@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /* ---------- HTML Markup styles------------ */
 html {
     scroll-behavior: smooth;
@@ -151,13 +153,13 @@ body {
 }
 
 .main-introduction__wrapper {
-    min-height: 550px;
+    min-height: 650px;
 }
 
 .main-introduction__picture,
 .main-introduction__picture img {
-    width: 350px;
-    height: 458px;
+    width: 450px;
+    height: 600px;
     border-radius: 10px;
 }
 
@@ -169,13 +171,6 @@ body {
     z-index: 0;
 }
 
-.main-personal__aboutMe-wrapper {
-    flex-basis: 50%;
-    margin: 20px 20px 20px 10%;
-    padding: 10px 20px;
-    min-height: 400px;
-}
-
 
 .main-introduction__businessCard {
     max-width: 50%;
@@ -185,8 +180,9 @@ body {
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 10px 10px;
     position: absolute;
+    padding: 10px;
     top: 270px;
-    right: 17%;
+    right: 12%;
     box-shadow: 2px 2px 3px rgb(167, 165, 165);
 }
 
@@ -209,8 +205,8 @@ body {
     max-width: 350px;
     max-height: 170px;
     position: absolute;
-    top: 458px;
-    right: 20%;
+    top: 540px;
+    right: 12%;
     padding-top: 10px;
 }
 
@@ -235,6 +231,18 @@ body {
     color: white;
 }
 
+.main-personal__aboutMe-wrapper,
+.main-personal__skills-wrapper
+ {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    min-height: 450px;
+}
+.main-personal__aboutMe-wrapper{
+    margin: 20px 20px 20px 10%;
+}
+
+
 .main-personal__aboutMe-footer {
     display: flex;
     align-items: center;
@@ -247,10 +255,7 @@ body {
 }
 
 .main-personal__skills-wrapper {
-    flex-basis: 50%;
     margin: 20px 10% 20px 20px;
-    padding: 10px 20px;
-    min-height: 400px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px 10px;
     box-shadow: 2px 2px 3px rgb(167, 165, 165);
@@ -299,17 +304,46 @@ body {
     flex-basis: 20%;
 }
 
-.main-content__circle1{
+.main-content__circle1 img{
     position: absolute;
+    top: 18%;
+    right: 0px;
+    max-width: 25vw;
+    max-height: 25vw;
+    z-index: -1;
 }
-.main-content__circle2{
+.main-content__circle2 img{
     position: absolute;
+    top: 48%;
+    left: 30%;
+    max-width: 25%;
+    max-height: 25%;
+    z-index: -1;
 }
 .main-content__circle3 img{
     position: absolute;
     top: 100px;
     left: 0px;
-    width: 15vw;
-    height: 15vw;
+    max-width: 15vw;
+    max-height: 15vw;
     z-index: 1;
+}
+
+.main-p-title{
+    color: rgba(238, 146, 61,0.5);
+    font-size: 32px;
+    margin: 0px 10px;
+}
+
+.main-p-description,
+li{
+    color: #4e320b;
+    font-size: 19px;
+}
+
+.main-p-description,
+.main-p-title,
+h1,
+h2{
+    font-family: 'Lato', sans-serif;
 }
