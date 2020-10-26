@@ -162,10 +162,7 @@ span {
     margin-top: 100px;
     width: 100%;
 }
-
-.main-content__circle1 img,
-.main-content__circle2 img,
-.main-content__circle3 img,
+[class*="__circle"] img,
 .main-introduction__picture,
 .main-introduction__businessCard,
 .main-introduction__contact-wrapper {
@@ -276,11 +273,7 @@ span {
     color: #ffffff;
 }
 
-.main-skills__HTML,
-.main-skills__CSS,
-.main-skills__JS,
-.main-skills__React,
-.main-skills__TS {
+[class^="main-skills__"]{
     padding: 5px;
     border-radius: 6px;
     box-shadow: 2px 2px 4px rgb(167, 165, 165);
