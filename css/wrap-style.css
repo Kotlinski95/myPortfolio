@@ -31,8 +31,9 @@ span {
 .main-introduction__contact-hire,
 .main-introduction__contact-CV,
 .main-introduction__businessCard-footer,
-.main-personal__aboutMe-footer
-{
+.main-personal__aboutMe-footer,
+.main-tools__list,
+.main-tools__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163,6 +164,7 @@ span {
     margin-top: 100px;
     width: 100%;
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -170,6 +172,7 @@ span {
 .main-content__circle2 img,
 .main-content__circle3 img,
 .main-content__circle4 img,
+.main-tools__circle1,
 .main-introduction__picture,
 .main-introduction__businessCard,
 .main-introduction__contact-wrapper {
@@ -204,10 +207,13 @@ span {
     padding: 10px;
     top: 170px;
     right: 12%;
+    -webkit-box-shadow: 2px 2px 3px rgb(167, 165, 165);
     box-shadow: 2px 2px 3px rgb(167, 165, 165);
 }
 
 .main-introduction__businessCard-footer {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -231,17 +237,20 @@ span {
 .main-introduction__contact-hire,
 .main-introduction__contact-CV {
     min-height: 45px;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     margin: 0 auto;
     background: url('../images/button_01.png') no-repeat 0px/cover;
     margin: 0px 10px;
     border-radius: 3px 3px;
+    -webkit-box-shadow: 2px 2px 5px #a7a6a5;
     box-shadow: 2px 2px 5px #a7a6a5;
     color: white;
 }
 
 .main-personal__aboutMe-wrapper,
 .main-personal__skills-wrapper {
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     padding: 10px 20px;
     min-height: 550px;
@@ -253,6 +262,8 @@ span {
 
 
 .main-personal__aboutMe-footer {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -265,6 +276,7 @@ span {
     margin: 20px 10% 20px 20px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px 10px;
+    -webkit-box-shadow: 2px 2px 3px rgb(167, 165, 165);
     box-shadow: 2px 2px 3px rgb(167, 165, 165);
 }
 
@@ -276,6 +288,8 @@ span {
     background-color: rgba(240, 240, 240, 0.9);
     border-radius: 6px;
     margin: 10px 70px 10px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #ffffff;
 }
@@ -283,25 +297,35 @@ span {
 [class^="main-skills__"] {
     padding: 5px;
     border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 4px rgb(167, 165, 165);
     box-shadow: 2px 2px 4px rgb(167, 165, 165);
     background: url('../images/_elementy_gradient_menu.jpg') no-repeat 0px/cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     min-width: 130px;
 }
 
 .main-skills__HTML,
 .main-skills__CSS {
+    -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
 }
 
 .main-skills__JS {
+    -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
 }
 
 .main-skills__React,
 .main-skills__TS {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
 }
 
@@ -355,4 +379,89 @@ li {
 h1,
 h2 {
     font-family: 'Lato', sans-serif;
+}
+
+/* ---------------- My tools------------------- */
+.main-tools__wrapper {
+    position: relative;
+    background: url("../images/tło_gradient.png") no-repeat 0px/cover;
+    padding: 20px 150px 20px 220px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 300px;
+}
+
+.main-tools__list {
+    margin-top: 10px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.main-tools__item {
+    background-color: #ffffff;
+    -webkit-box-shadow: 3px 3px 5px darkgrey;
+    box-shadow: 3px 3px 5px darkgrey;
+    margin: 0px 10px;
+    -ms-flex-preferred-size: 5%;
+    flex-basis: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 100px;
+    min-height: 100px;
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all;
+}
+
+.main-tools__item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.main-tools__item-description,
+.main-tools__item-logo {
+    text-align: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+}
+
+.main-tools__item-logo img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.main-tools__item-description span {
+    display: inline-block;
+}
+
+.main-tools__circle1 img,
+.main-tools__circle1 {
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+}
+
+.main-projects__wrapper {
+    min-height: 500px;
+}
+
+.main-tools__circle2 img,
+.main-tools__circle2 {
+    position: absolute;
+    top: -125px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
 }
