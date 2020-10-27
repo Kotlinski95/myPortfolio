@@ -9,6 +9,7 @@ html {
 body {
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 span {
@@ -18,7 +19,6 @@ span {
 /* ---------- Main wrapper structure------------ */
 .main--wrapper {
     width: 100%;
-    position: relative;
     overflow-y: auto;
 }
 
@@ -31,7 +31,8 @@ span {
 .main-introduction__contact-hire,
 .main-introduction__contact-CV,
 .main-introduction__businessCard-footer,
-.main-personal__aboutMe-footer {
+.main-personal__aboutMe-footer
+{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -161,8 +162,14 @@ span {
     min-height: calc(100vh - 100px);
     margin-top: 100px;
     width: 100%;
+    position: relative;
+    box-sizing: border-box;
 }
-[class*="__circle"] img,
+
+.main-content__circle1 img,
+.main-content__circle2 img,
+.main-content__circle3 img,
+.main-content__circle4 img,
 .main-introduction__picture,
 .main-introduction__businessCard,
 .main-introduction__contact-wrapper {
@@ -182,7 +189,7 @@ span {
 
 .main-introduction__picture {
     background: url('../images/sandpaper.png') no-repeat 0px/cover;
-    top: 150px;
+    top: 50px;
     left: 10%;
     z-index: 0;
 }
@@ -195,7 +202,7 @@ span {
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 10px 10px;
     padding: 10px;
-    top: 270px;
+    top: 170px;
     right: 12%;
     box-shadow: 2px 2px 3px rgb(167, 165, 165);
 }
@@ -216,7 +223,7 @@ span {
 .main-introduction__contact-wrapper {
     max-width: 350px;
     max-height: 170px;
-    top: 540px;
+    top: 440px;
     right: 12%;
     padding-top: 10px;
 }
@@ -266,14 +273,14 @@ span {
 }
 
 .main-skill {
-    background-color: rgba(225, 225, 225, 0.35);
+    background-color: rgba(240, 240, 240, 0.9);
     border-radius: 6px;
     margin: 10px 70px 10px 5px;
     display: flex;
     color: #ffffff;
 }
 
-[class^="main-skills__"]{
+[class^="main-skills__"] {
     padding: 5px;
     border-radius: 6px;
     box-shadow: 2px 2px 4px rgb(167, 165, 165);
@@ -299,15 +306,15 @@ span {
 }
 
 .main-content__circle1 img {
-    top: 25%;
+    top: 200px;
     right: 0px;
-    max-width: 28%;
-    max-height: 28%;
+    max-width: 30%;
+    max-height: 30%;
     z-index: -1;
 }
 
 .main-content__circle2 img {
-    top: 48%;
+    top: 450px;
     left: 30%;
     max-width: 25%;
     max-height: 25%;
@@ -315,11 +322,20 @@ span {
 }
 
 .main-content__circle3 img {
-    top: 100px;
+    top: 0px;
     left: 0px;
     max-width: 20%;
     max-height: 20%;
     z-index: 1;
+}
+
+.main-content__circle4 img {
+    bottom: 0px;
+    right: 0px;
+    max-width: 400px;
+    max-height: 400px;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 .main-p-title {
