@@ -168,11 +168,7 @@ span {
     box-sizing: border-box;
 }
 
-.main-content__circle1 img,
-.main-content__circle2 img,
-.main-content__circle3 img,
-.main-content__circle4 img,
-.main-tools__circle1,
+[class*="circle"] img,
 .main-introduction__picture,
 .main-introduction__businessCard,
 .main-introduction__contact-wrapper {
