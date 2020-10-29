@@ -342,10 +342,136 @@
             </div>
         </div>
 
-        <div id="main-blog" class="main-blog__wrapper"></div>
+        <div id="main-blog" class="main-blog__wrapper">
+            <h2>// Blog posts</h2>
+            <p class="main-p-title">Interesting facts about me</p>
+            <div class="main-blog__post">
+                <div class="main-blog__post-wrapper">
+                    <div class="main-blog__post-image"><img src="./images/automotive.png" alt="Automotive factory photo">
+                    </div>
+                    <div class="main-blog__post-description">
+                        <div class="main-blog__post-header">
+                            <div class="main-blog__post-title">
+                                <h3>// PLC programmer carrier</h3>
+                            </div>
+                            <div class="main-blog__post-author">
+                                <p>Adrian Kotliński, 27.10.2020</p>
+                            </div>
+                        </div>
+                        <div class="main-blog__post-shortcut">
+                            <p class="main-p-title">PLC programming vs Front-End</p>
+                            <p class="main-p-description">How to change profession from Automatic area into Front-End?
+                                It's
+                                not easy road, but there are similarities in both profession... </p>
+                        </div>
+                        <div class="main-blog__post-readMore">
+                            <input type="checkbox" class="read-more-state" id="post-1"/>
+                            <label for="post-1" class="read-more-trigger"><i class="icon-right-open-big"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-blog__content read-more-target">
+                    <p>In my case, carrier in automotive area was based on programming. There
+                        are much device to control: PLC, servomechanisms, inverter, safety devices, RFID etc.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="main-blog__post">
+                <div class="main-blog__post-wrapper">
+                    <div class="main-blog__post-image" ><img src="./images/graduation_agh.png" alt="Graduation - agh photo">
+                    </div>
+                    <div class="main-blog__post-description">
+                        <div class="main-blog__post-header">
+                            <div class="main-blog__post-title">
+                                <h3>// AGH - graduation</h3>
+                            </div>
+                            <div class="main-blog__post-author">
+                                <p>Adrian Kotliński, 20.01.2019</p>
+                            </div>
+                        </div>
+                        <div class="main-blog__post-shortcut">
+                            <p class="main-p-title">Automation and Robotics</p>
+                            <p class="main-p-description">Last year I graduate from AGH at first degree. My faculty was
+                                Automation and Robotics. Now I'm during second degree in specialization Automation and
+                                metrology... </p>
+                        </div>
+                        <div class="main-blog__post-readMore ">
+                            <input type="checkbox" class="read-more-state" id="post-2"/>
+                            <label for="post-2" class="read-more-trigger"> <i class="icon-right-open-big"></i> </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-blog__content read-more-target">
+                    <p>My passion is programming, on my study I learn programming in very
+                        different ways, from small electronic like arduino, raspberry PI to big industrial devices like
+                        PLC. I have also course in programming languages like C,C++,C##, some basic in HTML,CSS etc.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="main-blog__circle1">
+                <img src="./images/kolo_1.png" alt="blog circle nr 1">
+            </div>
+        </div>
+        <div id="main-contact" class="main-contact__wrapper">
+            <div class="main-contact__form">
+                <h2>// Contact me </h2>
+                <p class="main-p-description">If you are willing to work with me, contact me. I can join your conference
+                    to serve you with my engineering experience</p>
+                <form action="https://formspree.io/f/mleonrjv" id="contact-form" method="POST">
+                    <div class="main-form-content">
+                        <div class="main-contact-form__item">
 
-        <div id="main-contact" class="main-contact__wrapper"></div>
+                            <input type="email" name="form-email" id="form-email"
+                                class="main-contact-form__email field-error"
+                                title="Please insert your e-mail adress on which I can response"
+                                placeholder="Your e-mail" data-text-error="Please enter correct e-mail!" required>
+                        </div>
+                        <div class="form-message"></div>
 
+                        <div class="main-contact-form__item">
+                            <input type="text" name="form-name" id="form-name" pattern=".{3,}"
+                                class="main-contact-form__name field-error" title="Please introduce yourself"
+                                data-text-error="Please enter correct name (min. 3 characters)!" placeholder="Your name"
+                                required>
+                        </div>
+
+                        <div class="main-contact-form__item">
+                            <textarea name="form-textarea" id="form-textarea" title="Please enter your message"
+                                re-size="none" class="main-contact-form__message" required placeholder="How can I help you?
+Please, put here your
+message/request."></textarea>
+                        </div>
+                        <div class="main-contact-form__endform">
+                            <input type="submit" name="form-submit" id="form-submit" class="main-contact-form__submit"
+                                value="Send">
+
+                            <input type="reset" name="form-reset" id="form-reset" class="main-contact-form__reset"
+                                value="Reset">
+                        </div>
+                        <p id="form-status"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="main-contact__description">
+                <div class="main-contact__card">
+                    <div class="main-contact__card-symbol"></div>
+                    <div class="main-contact__card-data">
+                        <p class="main-p-description">kotlinski95@gmail.com</p>
+                        <p class="main-p-description">+48 608 418 911</p>
+                    </div>
+                </div>
+                <img src="./images/Adrian-Kotlinski.png" alt="Adrian Kotlinski - photo">
+                <p class="contact-p-description">author: Adrian Kotliński</p>
+                <p class="contact-p-description">username: @kotlinskidev</p>
+                <p class="contact-p-description">description: University Graduate | Automation and Robotics</p>
+                <p class="contact-p-description">homepage: <a href="https://kotlinskidev.pl/" target="__blank" class="link">https://kotlinskidev.pl/</a> </p>
+                <p class="contact-p-description">repository type: Open-source</p>
+                <p class="contact-p-description">url: <a href="https://bitbucket.org/kotlinskidev/" target="__blank" class="link">https://bitbucket.org/kotlinskidev/</a> </p>
+            </div>
+            <div class="main-contact__circle1">
+                <img src="./images/kolo_3.png" alt="contact circle nr 1">
+            </div>
+        </div>
         <a href="#main-introduction">
             <div class="main-navigation__scroll-Up"></div>
         </a>
