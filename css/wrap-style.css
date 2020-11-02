@@ -33,7 +33,8 @@ span {
 .main-introduction__businessCard-footer,
 .main-personal__aboutMe-footer,
 .main-tools__list,
-.main-tools__item {
+.main-tools__item,
+.main-projects__list  {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -460,4 +461,89 @@ h2 {
     width: 500px;
     height: 500px;
     z-index: -1;
+}
+
+
+/* ------------------ My projects --------------------- */
+.main-projects__wrapper {
+    padding: 20px 200px 20px 200px;
+    position: relative;
+}
+
+.main-projects__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.main-projects__item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 15px;
+    -webkit-box-shadow: 3px 3px 5px lightgrey;
+            box-shadow: 3px 3px 5px lightgrey;
+    background-color: #ffffff;
+    border-radius: 7px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.main-projects__item-screen {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+}
+
+.main-projects__item-footer {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.main-projects__item-screen img {
+    max-width: 340px;
+    max-height: 340px;
+}
+
+.main-projects__item-footer img {
+    max-height: 50px;
+    max-width: 50px;
+    color: white;
+}
+
+.main-projects__item-description {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+    opacity: 0;
+}
+
+.main-projects__item-description h3 {
+    margin-bottom: 2px;
+}
+
+.main-projects__item-description p {
+    color: white;
+    margin-top: 0px;
+}
+
+.main-projects__circle1 img {
+    right: 35%;
+    top: calc(50% - 150px);
+    z-index: -1;
+    max-width: 400px;
+    max-height: 400px;
 }
