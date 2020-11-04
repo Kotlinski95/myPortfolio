@@ -22,6 +22,11 @@ span {
     overflow-y: auto;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* ---------- Header wrapper structure------------ */
 .main-header__wrapper,
 .main-header__navigation,
@@ -34,7 +39,13 @@ span {
 .main-personal__aboutMe-footer,
 .main-tools__list,
 .main-tools__item,
-.main-projects__list  {
+.main-projects__list,
+.main-projects__item,
+.main-projects__item-description,
+.main-projects__item-footer,
+.main-blog__post-wrapper,
+.main-blog__post-image,
+.main-projects__nav-wrapper  {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -465,6 +476,7 @@ h2 {
 
 
 /* ------------------ My projects --------------------- */
+
 .main-projects__wrapper {
     padding: 20px 200px 20px 200px;
     position: relative;
@@ -472,19 +484,19 @@ h2 {
 
 .main-projects__list {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .main-projects__item {
     -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    flex-basis: 25%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 15px;
     -webkit-box-shadow: 3px 3px 5px lightgrey;
-            box-shadow: 3px 3px 5px lightgrey;
+    box-shadow: 3px 3px 5px lightgrey;
     background-color: #ffffff;
     border-radius: 7px;
     -webkit-transition: all 1s;
@@ -494,18 +506,18 @@ h2 {
 
 .main-projects__item-screen {
     -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
+    flex-basis: 90%;
 }
 
 .main-projects__item-footer {
     -ms-flex-preferred-size: 10%;
-        flex-basis: 10%;
+    flex-basis: 10%;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 .main-projects__item-screen img {
@@ -523,8 +535,8 @@ h2 {
     position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     max-width: 340px;
     text-align: center;
@@ -548,6 +560,36 @@ h2 {
     max-height: 400px;
 }
 
+.main-projects__nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50vw - 100px)
+}
+
+.main-projects__list {
+    min-height: 220px;
+}
+
+.main-projects__nav-item {
+    font-size: 40px;
+    margin: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.main-projects__description-mobile {
+    min-height: 200px;
+    display: none;
+}
 
 /* -------------------- my Blog -------------------- */
 
