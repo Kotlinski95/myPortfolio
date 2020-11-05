@@ -4,7 +4,6 @@ let projectBusy;
 function projectOpened(clicked) {
     for (let i in clicked) {
         if (clicked[i]) {
-
             return true;
         }
     }
@@ -12,7 +11,7 @@ function projectOpened(clicked) {
 }
 
 function portfolioShow(projectNumber) {
-    isClicked[projectNumber] ? isClicked[projectNumber] = false : isClicked[projectNumber] = true;
+    isClicked[projectNumber] = isClicked[projectNumber] ? false : true;
     const project = document.getElementsByClassName('main-projects__item');
     const screen = project[projectNumber - 1].getElementsByClassName('main-projects__item-screen');
     const img = screen[0].querySelector('img');
