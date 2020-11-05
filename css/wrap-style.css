@@ -45,7 +45,13 @@ span {
 .main-projects__item-footer,
 .main-blog__post-wrapper,
 .main-blog__post-image,
-.main-projects__nav-wrapper  {
+.main-projects__nav-wrapper,
+[class^="main-skills__"],
+.main-projects__nav-wrapper,
+.main-contact__wrapper,
+.main-contact__description,
+.main-contact__card,
+.main-contact-form__endform  {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,12 +314,6 @@ span {
     -webkit-box-shadow: 2px 2px 4px rgb(167, 165, 165);
     box-shadow: 2px 2px 4px rgb(167, 165, 165);
     background: url('../images/_elementy_gradient_menu.jpg') no-repeat 0px/cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -561,15 +561,6 @@ h2 {
 }
 
 .main-projects__nav-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     position: absolute;
     bottom: 5px;
     left: calc(50vw - 100px)
@@ -737,15 +728,6 @@ h2 {
     background: url('../images/tlo_gradient.png') no-repeat 0px/cover;
     padding: 20px 200px 20px 200px;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .main-contact__form {
@@ -761,9 +743,6 @@ h2 {
     position: relative;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -790,15 +769,6 @@ h2 {
     position: absolute;
     top: 270px;
     left: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0px 10px;
     border-radius: 5px;
@@ -852,9 +822,6 @@ h2 {
 }
 
 .main-contact-form__endform {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
