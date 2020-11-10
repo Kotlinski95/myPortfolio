@@ -4,6 +4,8 @@ let projectBusy;
 function projectOpened(clicked) {
     for (let i in clicked) {
         if (clicked[i]) {
+            clearTimeout(timerChange);
+            clearTimeout(timerHide);
             return true;
         }
     }
@@ -11,7 +13,9 @@ function projectOpened(clicked) {
 }
 
 function portfolioShow(projectNumber) {
-    isClicked[projectNumber] = isClicked[projectNumber] ? false : true;
+    clearTimeout(timerChange);
+    clearTimeout(timerHide);
+    isClicked[projectNumber] ? isClicked[projectNumber] = false : isClicked[projectNumber] = true;
     const project = document.getElementsByClassName('main-projects__item');
     const screen = project[projectNumber - 1].getElementsByClassName('main-projects__item-screen');
     const img = screen[0].querySelector('img');
@@ -30,6 +34,9 @@ function portfolioShow(projectNumber) {
         description.style.opacity = '1';
     } else {
         projectBusy = projectOpened(isClicked);
+        if (!projectBusy && (mobile == true)) {
+            setTimeout('changeProject(true)', 8000);
+        }
         project[projectNumber - 1].style.backgroundColor = 'initial';
         project[projectNumber - 1].style.opacity = 'initial';
         img.style.opacity = 'initial';
