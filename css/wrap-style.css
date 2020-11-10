@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 
 /* ---------- HTML Markup styles------------ */
@@ -45,13 +47,7 @@ span {
 .main-projects__item-footer,
 .main-blog__post-wrapper,
 .main-blog__post-image,
-.main-projects__nav-wrapper,
-[class^="main-skills__"],
-.main-projects__nav-wrapper,
-.main-contact__wrapper,
-.main-contact__description,
-.main-contact__card,
-.main-contact-form__endform  {
+.main-projects__nav-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -69,7 +65,7 @@ span {
 
 .main-header__wrapper {
     height: 100px;
-    min-width: 1200px;
+    min-width: 1100px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -86,6 +82,10 @@ span {
 
 .main-header__wrapperUp {
     Top: -100px;
+}
+
+.main-header__dropdown {
+    display: none;
 }
 
 .main-header__signature {
@@ -169,12 +169,12 @@ span {
     bottom: 25px;
     cursor: pointer;
     display: none;
+    opacity: 0.7;
 }
 
 .main-content__wrapper {
     padding-top: 100px;
 }
-
 
 /* -------------------- Personal info page ------------------------- */
 .main-programmer__characteristic {
@@ -214,8 +214,8 @@ span {
 .main-introduction__businessCard {
     max-width: 50%;
     min-width: 400px;
-    max-height: 250px;
-    min-height: 200px;
+    max-height: 270px;
+    min-height: 220px;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 10px 10px;
     padding: 10px;
@@ -232,8 +232,8 @@ span {
 }
 
 .main-introduction__businessCard-footer img {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 60px;
+    max-height: 60px;
 }
 
 .main-introduction__businessCard-footer span {
@@ -248,11 +248,15 @@ span {
     padding-top: 10px;
 }
 
+.main-introduction__contact-description {
+    text-align: right;
+}
+
 .main-introduction__contact-hire,
 .main-introduction__contact-CV {
     min-height: 45px;
     -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+    width: 130px;
     margin: 0 auto;
     background: url('../images/button_01.png') no-repeat 0px/cover;
     margin: 0px 10px;
@@ -314,6 +318,12 @@ span {
     -webkit-box-shadow: 2px 2px 4px rgb(167, 165, 165);
     box-shadow: 2px 2px 4px rgb(167, 165, 165);
     background: url('../images/_elementy_gradient_menu.jpg') no-repeat 0px/cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -392,7 +402,7 @@ h2 {
 /* ---------------- My tools------------------- */
 .main-tools__wrapper {
     position: relative;
-    background: url("../images/tło_gradient.png") no-repeat 0px/cover;
+    background: url("../images/tlo_gradient.png") no-repeat 0px/cover;
     padding: 20px 150px 20px 220px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -460,8 +470,8 @@ h2 {
     z-index: -1;
 }
 
-.main-projects__wrapper {
-    min-height: 500px;
+.main-projects__wrapper p {
+    max-width: 500px;
 }
 
 .main-tools__circle2 img,
@@ -473,7 +483,6 @@ h2 {
     height: 500px;
     z-index: -1;
 }
-
 
 /* ------------------ My projects --------------------- */
 
@@ -561,6 +570,15 @@ h2 {
 }
 
 .main-projects__nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     bottom: 5px;
     left: calc(50vw - 100px)
@@ -728,6 +746,15 @@ h2 {
     background: url('../images/tlo_gradient.png') no-repeat 0px/cover;
     padding: 20px 200px 20px 200px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .main-contact__form {
@@ -743,6 +770,9 @@ h2 {
     position: relative;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -769,6 +799,15 @@ h2 {
     position: absolute;
     top: 270px;
     left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0px 10px;
     border-radius: 5px;
@@ -822,6 +861,9 @@ h2 {
 }
 
 .main-contact-form__endform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
