@@ -5,8 +5,7 @@ let buttonsDiv = document.getElementsByClassName('main-projects__nav-item');
 let buttonLeft = buttonsDiv[0].querySelector('i');
 let buttonRight = buttonsDiv[1].querySelector('i');
 let description = document.getElementsByClassName('main-projects__description-mobile');
-const body = document.body,
-html = document.documentElement;
+
 
 var pageWidth = Math.max(body.scrollWidth, body.offsetWidth,
     html.clientWidth, html.scrollWidth, html.offsetWidth);
