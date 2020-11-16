@@ -50,7 +50,7 @@ function portfolioShow(projectNumber) {
 function portfolioIncrease(projectNumber) {
     const project = document.getElementsByClassName('main-projects__item');
     project[projectNumber - 1].style.transform = 'scale(1.3)';
-    project[projectNumber - 1].style.zIndex = '2';
+    project[projectNumber - 1].style.zIndex = '10';
     if (!isClicked[projectNumber]) {
         project[projectNumber - 1].style.backgroundColor = 'rgb(255, 255, 255)';
     }
@@ -59,7 +59,7 @@ function portfolioIncrease(projectNumber) {
 
 function portfolioDecrease(projectNumber) {
     const project = document.getElementsByClassName('main-projects__item');
-    project[projectNumber - 1].style.transform = 'initial';
+    project[projectNumber - 1].style.transform = 'scale(1)';
     project[projectNumber - 1].style.zIndex = 'initial';
     if (!isClicked[projectNumber]) {
         project[projectNumber - 1].style.backgroundColor = 'rgb(255, 255, 255)';

@@ -1,10 +1,11 @@
-let actualProject = Math.floor(Math.random() * 5 + 1);
 let project = document.getElementsByClassName('main-projects__item');
 let portfolio = document.getElementsByClassName('main-projects__list');
 let buttonsDiv = document.getElementsByClassName('main-projects__nav-item');
 let buttonLeft = buttonsDiv[0].querySelector('i');
 let buttonRight = buttonsDiv[1].querySelector('i');
 let description = document.getElementsByClassName('main-projects__description-mobile');
+let projectsAmount = project.length;
+let actualProject = Math.floor(Math.random() * projectsAmount + 1);
 
 
 var pageWidth = Math.max(body.scrollWidth, body.offsetWidth,
@@ -14,11 +15,11 @@ function resizePage() {
     var pageWidth = Math.max(body.scrollWidth, body.offsetWidth,
         html.clientWidth, html.scrollWidth, html.offsetWidth);
     if (pageWidth < 700) {
-        for (let i = 0; i < project.length;i++) {
+        for (let i = 0; i < project.length; i++) {
             project[i].style.display = "none";
         }
     } else {
-        for (let i = 0; i < project.length;i++) {
+        for (let i = 0; i < project.length; i++) {
             project[i].style.display = "block";
         }
     }
@@ -91,10 +92,10 @@ if (pageWidth <= 700) {
             } else {
                 actualProject--;
             }
-            if (actualProject > 5) {
+            if (actualProject > projectsAmount) {
                 actualProject = 1;
             } else if (actualProject < 1) {
-                actualProject = 5;
+                actualProject = projectsAmount;
             }
             project[previousProject - 1].style.display = "none";
 
@@ -106,6 +107,7 @@ if (pageWidth <= 700) {
             description[0].style.color = '#4e320b';
             description[0].style.textAlign = 'center';
 
+
             $(`.main-projects__description-mobile`).fadeIn(1000);
             $(`.main-projects__item:eq(${actualProject - 1})`).fadeIn(1000);
             clearTimeout(timerChange);
@@ -116,8 +118,7 @@ if (pageWidth <= 700) {
     }
     setInterval(checkDirection, 400)
     window.addEventListener("load", changeProject);
-}
-else {
+} else {
     var mobile = false;
 }
 buttonLeft.addEventListener("click", function () {
