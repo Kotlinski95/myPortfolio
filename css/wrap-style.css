@@ -784,7 +784,7 @@ h2{
 
 .main-blog__circle1 img {
     bottom: -0.3vw;
-    left: -4vw;
+    left: -3.5vw;
     z-index: -1;
     max-width: 19vw;
     max-width: 19vw;
@@ -919,8 +919,9 @@ h2{
 .main-contact__circle1 img {
     max-width: 20vw;
     max-height: 20vw;
-    top: -60px;
+    bottom: -15.5vw;
     left: 55vw;
+    z-index: 10;
 }
 
 .main-contact__circle2 img {
