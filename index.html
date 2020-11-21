@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Adrian Kotliński - Junior Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Junior Front-End Developer." />
+    <meta name="keywords" content="Adrian, Kotliński, junior, Front End Developer, JavaScript, React, TypeScript" />
+    <meta name="author" content="Adrian Kotliński" />
+    <meta property="og:title" content="Adrian Kotliński - portfolio" />
+    <meta property="og:url" content="https://adriankotlinskiportfolio.pl" />
+    <meta property="og:image" content="https://adriankotlinskiportfolio.pl/logo.jpg" />
+    <meta property="og:description" content="Portfolio Junior Front-End Developer" />
+    <link rel="stylesheet" href="./css/wrap-style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css" />
+    <link rel="stylesheet" href="./css/fontello-style.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <noscript>
+        You need scripting enabled for full functionality of this website. Here
+        you will find
+        <a href="https://www.enable-javascript.com/pl/">
+            instructions that will allow you to enable scripts in your browser</a>.
+    </noscript>
+    <div class="main--wrapper">
+        <div class="main-header__wrapper">
+            <div class="main-header__signature">
+                <img src="./images//logo.png" alt="Here should be logo!">
+            </div>
+            <div class="main-header__navigation">
+                <button onclick="myFunction()" class="main-header__dropdown"><i class="icon-th-list"></i></button>
+                <div class="main-header__navigation-pages">
+                    <div class="main-header__navigation-Item" title="Small description about myself">
+                        <a href="#main-aboutMe" class="main-header-link">About me</a>
+                    </div>
+                    <div class="main-header__navigation-Item" title="Short review of my major skills">
+                        <a href="#main-skills" class="main-header-link">Skills</a>
+                    </div>
+                    <div class="main-header__navigation-Item" title="View of my recent projects">
+                        <a href="#main-projects" class="main-header-link">Portfolio</a>
+                    </div>
+                    <div class="main-header__navigation-Item" title="Little more about me in the form of blog">
+                        <a href="#main-blog" class="main-header-link">Blog</a>
+                    </div>
+                    <div class="main-header__navigation-Item" title="Feel free to contact with me :)">
+                        <a href="#main-contact" class="main-header-link">Contact me</a>
+                    </div>
+                    <div class="main-header__navigation-Item-hr"></div>
+                </div>
+                <div class="main-header__navigation-hr"></div>
+                <div class="main-header__navigation-social">
+                    <div class="main-header__navigation-Item" title="My twitter"><a
+                            href="https://twitter.com/KotlinskiAdrian" target="__blank" class="main-header-link"><i
+                                class="icon-twitter"></i></a></div>
+                    <div class="main-header__navigation-Item" title="My facebook"><a
+                            href="https://www.facebook.com/adrian.kotlinski.9/" target="__blank"
+                            class="main-header-link"><i class="icon-facebook-1"></i></a></div>
+                    <div class="main-header__navigation-Item" title="My linkedin"><a
+                            href="https://www.linkedin.com/in/adriankotlinski/" target="__blank"
+                            class="main-header-link"><i class="icon-linkedin"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-programmer__characteristic">
+            <div id="main-introduction" class="main-introduction__wrapper">
+                <div class="main-introduction__picture" class="main-blog__post-image" data-aos="fade-down"
+                    data-aos-easing="linear" data-aos-duration="700">
+                    <img src="./images/Adrian--Kotlinski.png" alt="Here should be my portrait..">
+                </div>
+                <div class="main-introduction__businessCard">
+                    <div class="main-introduction__businessCard-info">
+                        <hgroup>
+                            <h1>// Hi. My name is Adrian Kotliński</h1>
+                            <p class="main-p-title">Software Engineer</p>
+                            <p class="main-p-description">
+                                Passionate programmer, with two years of experience in programming industrial control
+                                systems, currently looking for challenges in the Front-End developing</h3>
+                        </hgroup>
+                    </div>
+                    <div class="main-introduction__businessCard-footer">
+                        <span class="main-p-description"> See my works</span>
+                        <a href="https://bitbucket.org/kotlinskidev/master/src/master/"
+                            title="My bitbucket repositories" target="__blank"> <img src="./images/bit_bucket_icon.png"
+                                alt="bit-bucket picture"></a>
+                        <a href="https://kotlinskidev.pl/" target="__blank" title="My website"><img
+                                src="./images/dev_icon.png" alt="developer picture"></a>
+                    </div>
+                </div>
+                <div class="main-introduction__contact-wrapper">
+                    <div class="main-introduction__contact-description">
+                        <h2>// I am a freelancer</h2>
+                        <p class="main-p-description">Contact me if you want to work with me</p>
+                    </div>
+
+                    <div class="main-introduction__contact">
+                        <a href="#main-contact" class="link"
+                            title="If you are interested to work with me, please, fill contact form.">
+                            <div class="main-introduction__contact-hire"><span>Hire me</span></div>
+                        </a>
+                        <a href="./static/CV_Adrian_Kotlinski-IT.pdf" download="CV_Adrian_Kotlinski-IT.pdf" target="__blank" class="link"
+                            title="Link to my CV">
+                            <div class="main-introduction__contact-CV"><span>Download CV</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-personal__wrapper">
+                <div id="main-aboutMe" class="main-personal__aboutMe-wrapper">
+                    <h2>// About me</h2>
+                    <p class="main-p-title">All about my work and plans</p>
+                    <p class="main-p-description"> Currently, I am studying (extramural) Automation and Robotics at AGH
+                        in Krakow.</p>
+                    <p class="main-p-description">For last two years I was involved in programming control systems in
+                        the automotive industry
+                        (mostly in German).For two months now, I have focused on learning programming in the Front-End
+                        area. I want to
+                        become a junior front-end developer.</p>
+                    <p class="main-p-title">My interests</p>
+                    <ul>
+                        <li>mountain trips</li>
+                        <li>DIY in electronics</li>
+                        <li>smart home technologies</li>
+                        <li>board games</li>
+                    </ul>
+                    <div class="main-personal__aboutMe-footer">
+                        <p class="main-p-description"><strong>I graduated the easy code course</strong> </p><a
+                            href="https://frontdevhero.pl/" title="frontdevhero.pl" target="__blank"><img
+                                src="./images/easy_code_button.png" alt="Easy code course link:"></a>
+                    </div>
+                </div>
+                <div id="main-skills" class="main-personal__skills-wrapper">
+                    <h2>// Skills</h2>
+                    <p class="main-p-description">Here is a list of my Front-End skills</p>
+                    <div class="main-personal__skills">
+                        <div class="main-skill">
+                            <div class="main-skills__HTML" title="Very good knowledge of HTML5"><span>HTML 90%</span>
+                            </div>
+                        </div>
+                        <div class="main-skill">
+                            <div class="main-skills__CSS" title="Very good knowledge of CSS3"><span>CSS 90%</span></div>
+                        </div>
+                        <div class="main-skill">
+                            <div class="main-skills__JS" title="
+                            Good knowledge of java-script, constantly developing new libraries and frameworks">
+                                <span>JavaScript 70%</span></div>
+                        </div>
+                        <div class="main-skill">
+                            <div class="main-skills__React" title="Basic skills in React library"><span>React 30%</span></div>
+                        </div>
+                        <div class="main-skill">
+                            <div class="main-skills__TS" title="Basic skills in TypeScript language"><span>TypeScript 30%</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-content__circle1">
+                <img src="./images/kolo_1.png" alt="circle nr 1">
+            </div>
+
+            <div class="main-content__circle2">
+                <img src="./images/kola_02.png" alt="circle nr 2">
+            </div>
+
+            <div class="main-content__circle3">
+                <img src="./images/kolo_3.png" alt="circle nr 3">
+            </div>
+
+            <div class="main-content__circle4">
+                <img src="./images/kolo_1.png" alt="circle nr 4">
+            </div>
+        </div>
+
+        <div id="main-tools" class="main-tools__wrapper">
+            <h2>// Tools</h2>
+            <p class="main-p-title">My essentials</p>
+            <div class="main-tools__list">
+                <div class="main-tools__item" data-aos="fade-right" data-aos-duration="1300" title="HTML5">
+                    <div class="main-tools__item-logo">
+                        <img src="./images/html_skills.png" alt="HTML 5 image">
+                    </div>
+                    <div class="main-tools__item-description">
+                        <span>HTML 5</span></br>
+                    </div>
+                </div>
+
+                <div class="main-tools__item" data-aos="fade-down" data-aos-duration="1300" title="CSS3">
+                    <div class="main-tools__item-logo">
+                        <img src="./images/css_skills.png" alt="CSS 3 image">
+                    </div>
+                    <div class="main-tools__item-description">
+                        <span>CSS 3</span></br>
+                    </div>
+                </div>
+
+                <div class="main-tools__item" data-aos="fade-up" data-aos-duration="1300" title="JavaSCript">
+                    <div class="main-tools__item-logo">
+                        <img src="./images/javascript_skills.png" alt="JavaScript ES6 image">
+                    </div>
+                    <div class="main-tools__item-description">
+                        <span>JavaScript</span></br><span>ES6</span>
+                    </div>
+                </div>
+
+                <div class="main-tools__item" data-aos="fade-down" data-aos-duration="1300"title="React library">
+                    <div class="main-tools__item-logo">
+                        <img src="./images/react_skills.png" alt="React image">
+                    </div>
+                    <div class="main-tools__item-description">
+                        <span>React</span></br><span>16.14.0</span>
+                    </div>
+                </div>
+
+                <div class="main-tools__item" data-aos="fade-left" data-aos-duration="1300">
+                    <div class="main-tools__item-logo">
+                        <img src="./images/tool_program_ikona.png" alt="Program 5.2.2 image">
+                    </div>
+                    <div class="main-tools__item-description">
+                        <span>Program</span></br><span>5.2.2.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tools__circle1">
+                <img src="./images/kolo_1.png" alt="tools circle nr 1">
+            </div>
+            <div class="main-tools__circle2">
+                <img src="./images/kolo_3.png" alt="tools circle nr 2">
+            </div>
+        </div>
+
+        <div id="main-projects" class="main-projects__wrapper">
+            <h2>// My works</h2>
+            <p class="main-p-title">Portfolio</p>
+            <p class="main-p-description"> Below I would like to present some of my projects in the area of ​​Front-End.
+                When you hover the cursor over a given element, its name and a list of used technologies will be
+                displayed. Below each project there is a link to bitbucket and a live demo.</p>
+            <div class="main-projects__list">
+                <div class="main-projects__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" title="Project portfolio">
+                    <div class="main-projects__item-screen" onclick="portfolioShow(1)"
+                        onmouseover="portfolioIncrease(1)" onmouseout="portfolioDecrease(1)">
+                        <div class="main-projects__item-description">
+                            <h3>Portfolio</h3>
+                            <p> - own web business card </p>
+                            <p> Tools: HTML, CSS, JavaScript</p>
+                        </div>
+                        <img src="./images/screen_project1.png" alt="Project 1 screenshot">
+                    </div>
+                    <div class="main-projects__item-footer">
+                        <div class="main-projects__item-bitbucket" title="link to bitbucket">
+                            <a href="https://kotlinskidev@bitbucket.org/kotlinskidev/master.git" target="__blank"><img src="./images/bit_bucket_icon.png"
+                                    alt="Bitbucket - project 1"></a>
+                        </div>
+                        <div class="main-projects__item-demo" title="link to github">
+                            <a href="https://github.com/Kotlinski95/myPortfolio" target="__blank"><img src="./images/external_link_icon.png"
+                                    alt="Live demo - project 1"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-projects__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">
+                    <div class="main-projects__item-screen" onclick="portfolioShow(2)"
+                        onmouseover="portfolioIncrease(2)" onmouseout="portfolioDecrease(2)">
+                        <div class="main-projects__item-description">
+                            <h3>Flashcards Application</h3>
+                            <p> - easy learn Front-End languages </p>
+                            <p> Tools: HTML, CSS, JavaSCript</p>
+                        </div>
+                        <img src="./images/screen_project2.png" alt="Project 2 screenshot">
+                    </div>
+                    <div class="main-projects__item-footer">
+                        <div class="main-projects__item-bitbucket" title="link to bitbucket">
+                            <a href="" target="__blank"><img src="./images/bit_bucket_icon.png"
+                                    alt="Bitbucket - project 2"></a>
+                        </div>
+                        <div class="main-projects__item-demo" title="link to github">
+                            <a href="https://github.com/Kotlinski95/flashcards-app" target="__blank"><img src="./images/external_link_icon.png"
+                                    alt="Live demo - project 2"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-projects__description-mobile"></div>
+            <div class="main-projects__nav-wrapper">
+                <div class="main-projects__nav-item"><i class="icon-left-open-big"></i></div>
+                <div class="main-projects__nav-item"><i class="icon-right-open-big"></i></div>
+            </div>
+            <div class="main-projects__circle1">
+                <img src="./images/kolo_1.png" alt="projects circle nr 1">
+            </div>
+        </div>
+        <div id="main-blog" class="main-blog__wrapper">
+            <h2>// Blog posts</h2>
+            <p class="main-p-title">Interesting facts about me</p>
+            <div class="main-blog__post">
+                <div class="main-blog__post-wrapper">
+                    <div class="main-blog__post-image" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="700">
+                    </div>
+                    <div class="main-blog__post-description">
+                        <div class="main-blog__post-header">
+                            <div class="main-blog__post-title">
+                                <h2>// PLC programmer carrier</h2>
+                            </div>
+                            <div class="main-blog__post-author">
+                                <p>Adrian Kotliński, 27.10.2020</p>
+                            </div>
+                        </div>
+                        <div class="main-blog__post-shortcut">
+                            <p class="main-p-title">PLC programming vs Front-End</p>
+                            <p class="main-p-description">How to change profession from Automatic area into Front-End?
+                                It's
+                                not easy road, but there are similarities in both professions. </p>
+                        </div>
+                        <div class="main-blog__post-readMore">
+                            <input type="checkbox" class="read-more-state" id="post-1" onclick="postToggle(1)" />
+                            <label for="post-1" class="read-more-trigger"><i class="icon-right-open-big"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-blog__content read-more-target">
+                    <p class="main-blog-p">In my case, carrier in automotive area was based on programming Programable
+                        Logic Controllers.
+                        There
+                        are much device to control: servomechanisms, inverters, safety devices, RFID systems etc.
+
+                        I used high level programming languages ​​like SCL, ST, C, C ++ in PLC programming, so I'm
+                        familiar with the structure of the JavaScript language. Each automation system has a
+                        visualization system, so designing the appearance of web applications doesn't much differ from
+                        scada systems in car factories.
+                        <img src="./images/cockpit.png" alt="car cockpit assembly line">
+                        I participated in several automotive projects, where we programmed production lines for such
+                        automotive elements as cockpit assembly, body welding and engine transport.
+                        <img src="./images/engine_transport.png" alt="transport car engines line">
+
+                        Working as an automation specialist taught me resistance to stress, strict adherence to
+                        deadlines, reliability and responsibility for the work entrusted to me</p>
+                </div>
+                <hr>
+            </div>
+            <div class="main-blog__post">
+                <div class="main-blog__post-wrapper">
+                    <div class="main-blog__post-image" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="700">
+                    </div>
+                    <div class="main-blog__post-description">
+                        <div class="main-blog__post-header">
+                            <div class="main-blog__post-title">
+                                <h2>// AGH - graduation</h2>
+                            </div>
+                            <div class="main-blog__post-author">
+                                <p>Adrian Kotliński, 20.01.2019</p>
+                            </div>
+                        </div>
+                        <div class="main-blog__post-shortcut">
+                            <p class="main-p-title">Automation and Robotics</p>
+                            <p class="main-p-description">Last year I graduate from AGH at first degree. My faculty
+                                was
+                                Automation and Robotics. Now I'm during second degree in specialization Automation
+                                and
+                                metrology... </p>
+                        </div>
+                        <div class="main-blog__post-readMore ">
+                            <input type="checkbox" class="read-more-state" id="post-2" onclick="postToggle(2)" />
+                            <label for="post-2" class="read-more-trigger"> <i class="icon-right-open-big"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-blog__content read-more-target">
+                    <p class="main-blog-p">My passion is programming, on my study I learn programming in very
+                        different ways, from small electronic like arduino, raspberry PI to big industrial devices
+                        like PLC. I have also course in programming languages like C,C++,C#, some basic in HTML,CSS
+                        etc.<br>
+                        <img src="./images/agh_industry.png" alt="agh industry 4.0 lab">
+                        Currently, I am continuing my studies at AGH in the field of automation and metrology. I study
+                        extramural, weekend, which allows me to combine work and study. There is no better option to
+                        combine theoretical knowledge with professional practice learned at work.
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <div class="main-blog__circle1">
+                <img src="./images/kolo_1.png" alt="blog circle nr 1">
+            </div>
+            <div class="main-contact__circle1">
+                <img src="./images/kolo_3.png" alt="contact circle nr 1">
+            </div>
+        </div>
+        <div id="main-contact" class="main-contact__wrapper">
+            <div class="main-contact__form">
+                <h2>// Contact me </h2>
+                <p class="main-p-description">If you are willing to work with me, contact me. I can join your
+                    conference
+                    to serve you with my engineering experience</p>
+                <form action="https://formspree.io/f/mleonrjv" id="contact-form" method="POST">
+                    <div id="main-contact-form" class="main-form-content">
+                        <div class="main-contact-form__item">
+
+                            <input type="email" name="form-email" id="form-email"
+                                class="main-contact-form__email field-error"
+                                title="Please insert your e-mail adress on which I can response"
+                                placeholder="Your e-mail" data-text-error="Please enter correct e-mail!" required>
+                        </div>
+                        <div class="form-message"></div>
+
+                        <div class="main-contact-form__item">
+                            <input type="text" name="form-name" id="form-name" pattern=".{3,}"
+                                class="main-contact-form__name field-error" title="Please introduce yourself"
+                                data-text-error="Please enter correct name (min. 3 characters)!" placeholder="Your name"
+                                required>
+                        </div>
+
+                        <div class="main-contact-form__item">
+                            <textarea name="form-textarea" id="form-textarea" title="Please enter your message"
+                                re-size="none" class="main-contact-form__message" required placeholder="How can I help you?
+Please, put here your
+message/request."></textarea>
+                        </div>
+                        <div class="main-contact-form__endform">
+                            <input type="submit" name="form-submit" id="form-submit" class="main-contact-form__submit"
+                                value="Send">
+
+                            <input type="reset" name="form-reset" id="form-reset" class="main-contact-form__reset"
+                                value="Reset">
+                        </div>
+                        <p id="form-status"></p>
+                    </div>
+
+                    <div class="main-contact-form__item" id="form-group">
+                        <label>a</label>
+                        <input class="form-control input-lg main-contact-form__email">
+                    </div>
+                    <div class="main-contact-form__item" id="form-group">
+                        <label>a</label>
+                    </div>
+                </form>
+            </div>
+            <div class="main-contact__description">
+                <div class="main-contact__card">
+                    <div class="main-contact__card-symbol"></div>
+                    <div class="main-contact__card-data">
+                        <p class="main-p-description">kotlinski95@gmail.com</p>
+                        <p class="main-p-description">+48 608 418 911</p>
+                    </div>
+                </div>
+                <div class="main-contact__image" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500"></div>
+                <p class="contact-p-description">author: Adrian Kotliński</p>
+                <p class="contact-p-description">username: @kotlinskidev</p>
+                <p class="contact-p-description">description: University Graduate | Automation and Robotics</p>
+                <p class="contact-p-description">homepage: <a href="https://kotlinskidev.pl" target="__blank" class="link">kotlinskidev.pl</a></p>
+                <p class="contact-p-description">repository type: Open-source</p>
+                <p class="contact-p-description">url: <a href="https://bitbucket.org/kotlinskidev/" target="__blank" class="link">https://bitbucket.org/kotlinskidev/</a></p>
+            </div>
+            <div class="main-contact__circle2">
+                <img src="./images/kolo_3.png" alt="contact circle nr 2">
+            </div>
+        </div>
+        <a href="#main-introduction">
+            <div class="main-navigation__scroll-Up"></div>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"> </script>
+    <script src="./js/header-animation.js"> </script>
+    <script src="./js/portfolio-animation.js"></script>
+    <script src="./js/blog-animation.js"></script>
+    <script src="./js/contact-form.js"></script>
+    <script src="./js/header-mobile.js"></script>
+    <script src="./js/portfolio-mobile.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
+
+</html>
