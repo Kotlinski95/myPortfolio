@@ -223,6 +223,7 @@
         border-radius: 0px;
         -webkit-box-shadow: none;
         box-shadow: none;
+        background: -o-radial-gradient(#B3E6BD, #194D21) no-repeat 0px / cover;
         background: radial-gradient(#B3E6BD, #194D21) no-repeat 0px / cover;
     }
 
@@ -309,6 +310,7 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        background: -o-radial-gradient(#B3E6BD, #194D21) no-repeat 0px / cover;
         background: radial-gradient(#B3E6BD, #194D21) no-repeat 0px / cover;
     }
 
@@ -330,7 +332,8 @@
         max-width: 350px;
         max-height: 350px;
     }
-    .main-projects__item-description h3{
+
+    .main-projects__item-description h3 {
         margin-top: 0px;
         top: 0px;
     }
@@ -556,7 +559,7 @@
         max-height: 350px;
     }
 
-    .main-projects__item-description h3{
+    .main-projects__item-description h3 {
         margin-top: 0px;
         top: 0px;
     }
@@ -578,7 +581,8 @@
         width: 90%;
         max-height: 100%;
         min-width: 100px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .main-blog__post-image,
@@ -594,15 +598,24 @@
 }
 
 @media only screen and (max-width: 350px) {
-.main-introduction__contact-description{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-self: center;
-}
+    .main-introduction__contact-description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -ms-flex-item-align: center;
+            align-self: center;
+    }
+
     .main-introduction__contact-description h2,
-    .main-introduction__contact-description p{
-        box-sizing: border-box;
+    .main-introduction__contact-description p {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         text-align: center;
     }
 
@@ -646,7 +659,8 @@
     .main-projects__item>img {
         min-width: 300px;
     }
-    .main-projects__item-description p{
+
+    .main-projects__item-description p {
         margin-bottom: 3px;
     }
 
@@ -662,7 +676,7 @@
     }
 
     .main-contact-form__item input,
-    .main-contact-form__item textarea,{
+    .main-contact-form__item textarea {
         padding: 5px;
     }
 
