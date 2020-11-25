@@ -60,6 +60,8 @@ body {
     width: 100%;
     background: var(--body-background);
     max-width: 3000px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
@@ -162,6 +164,7 @@ ul {
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
     z-index: 10;
+    /* overflow-y:auto; */
 }
 
 .main-header__wrapperUp {
