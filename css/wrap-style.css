@@ -25,10 +25,10 @@
     --button-contact-color-hover: #194D21;
     --box-shadow-color: #ececec;
     /* ---------- Backgrounds ------------ */
-
+    --gradient-background-footer: rgba(7, 68, 6, 0.95);
     --gradient-background-tools-contact: rgba(26, 124, 25, 0.95);
     --gradient-background-navigation: transparent;
-    --gradient-background-header: radial-gradient(#B3E6BD, #194D21);
+    --gradient-background-header: radial-gradient(#B3E6BD, #253026);
     /* ---------- Header ------------ */
     --signature-font-family: "Hanging Letters", sans-serif;
     --signature-font-size: 65px;
@@ -146,10 +146,10 @@ ul {
 }
 
 .main-header__wrapper {
-    height: 90px;
+    height: 75px;
     min-width: 1100px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     padding: 10px 20px;
@@ -810,6 +810,7 @@ h2 {
     max-width: 1000px;
     width: 100%;
 }
+
 .read-more-trigger {
     cursor: pointer;
     display: inline-block;
@@ -840,8 +841,8 @@ h2 {
 .main-blog-p img {
     display: block;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;s
-    align-self: center;
+    -ms-grid-row-align: center;
+    s align-self: center;
     margin: 10px 20px;
     max-width: 70%;
     -webkit-transition: 1s ease;
@@ -1097,4 +1098,85 @@ select:-webkit-autofill:focus {
     display: block;
     color: green;
     font-size: x-large;
+}
+
+/* ---------------------------- Footer ----------------------------------- */
+
+main > footer {
+    position: relative;
+    margin: 0 auto;
+    background: var(--gradient-background-footer) no-repeat 0px/cover;
+    color: #fff;
+    text-align: center;
+}
+
+main footer hr {
+    margin-top: 0;
+}
+
+.footer-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+    top: -30px;
+    left: 0;
+}
+
+.footer-icon {
+    position: relative;
+    background: var(--gradient-background-footer) no-repeat 0px/cover;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    width: 60px;
+    height: 60px;
+    
+}
+.footer-icon i
+{
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    filter: drop-shadow(0px 10px 0px);
+    animation: footer-icon 3s 2s infinite;
+}
+
+@keyframes footer-icon{
+    0%{
+        top: -2px;
+    }
+    25%{
+        top: -7px;
+    }
+    50%{
+        top: -2px;
+    }
+    75%{
+        top: -7px;
+    }
+    100%{
+        top: -2px;
+    }
+
+}
+.footer-icon:hover{
+    cursor: pointer;
+    background-color: var(--gradient-background-tools-contact);
+}
+
+main footer p:first-of-type {
+    margin-top: 40px;
+}
+main footer p:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+main footer p:last-of-type {
+    margin: 0;
+}
+
+main footer i {
+    font-size: 40px;
 }
