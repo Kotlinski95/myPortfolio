@@ -1107,6 +1107,7 @@ input:checked+.read-more-trigger::before {
     box-sizing: border-box;
     width: 280px;
     height: 80px;
+    z-index: 1;
 }
 
 .main-contact__card-symbol {
