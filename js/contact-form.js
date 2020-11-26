@@ -71,6 +71,8 @@ window.addEventListener("DOMContentLoaded", function () {
         button.style = "display: none ";
         var status = document.getElementById("form-status");
         status.innerHTML = "Thank you for your message! <br> I will send you answer as soon as possible";
+        status.style.padding = '10px';
+        status.style.borderRadius = '10px';
     }
 
     function error() {
