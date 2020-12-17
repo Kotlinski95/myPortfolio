@@ -38,6 +38,6 @@ If you are interested in a contact, you can press the "Hire me" button which wil
 
 Stay on top of my achievements. Below is a link to the demo version of the portfolio and a link to my website:
 Github portfolio:
-https://kotlinski95.github.io/myPortfolio/#main-projects
+https://kotlinski95.github.io/myPortfolio
 My website:
 https://kotlinskidev.pl/
