@@ -1,45 +1,41 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+## CodersCamp 2020 - Projekt HTML & CSS
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Hello, I would like to invite you to visit my portfolio page. Get to know me closer!
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+The website was originally prepared using JavaScript. These scripts have been removed for the purpose of this project.
 
+The website consists of 5 main sections:
+  - About me
+  - Skills
+  - Portfolio / my projects
+  - Blog
+  - Contact me
+  
+I've included links to social media on the website. I also attachted link to my CV.
 ---
 
-## Edit a file
+## About my page
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+I'm 25 years old. I am a student of Automation and Robotics with 2 years of experience in programming in the automotive industry at the position of Automation Engineer.
+The page includes a header with navigation that allows you to redirect to a specific section of the portfolio.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
-
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+1. The "About me" section contains basic information about me and my hobbies.
+2. The "skills" section contains a short summary of my technological stack (in the form of% knowledge of a given topic - it will be changed to a text description:
+3. The "portfolio" section contains a list (short for now: D) of my projects. Projects have links to github and bitbucket, where the application code is.
+4/ The "blog" section contains a short note about my previous professional work and a summary of my graduation from engineering studies.
+5. The "contact" section contains a form that allows you to contact me via e-mail. I also put a contact phone number and a link to my website :)
 
 ---
+## Contact with me
 
-## Clone a repository
+If you are interested in a contact, you can press the "Hire me" button which will redirect you to the contact form.
+"Download CV" button will allow you to download my CV in PDF format.
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+---
+## Follow me and 
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Stay on top of my achievements. Below is a link to the demo version of the portfolio and a link to my website:
+Github portfolio:
+https://kotlinski95.github.io/myPortfolio/#main-projects
+My website:
+https://kotlinskidev.pl/
