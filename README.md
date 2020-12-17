@@ -4,12 +4,14 @@ Hello, I would like to invite you to visit my portfolio page. Get to know me clo
 
 The website was originally prepared using JavaScript. These scripts have been removed for the purpose of this project.
 
+![MyPortfolio](./images/screen_project_1.png)
+
 The website consists of 5 main sections:
-  - About me
-  - Skills
-  - Portfolio / my projects
-  - Blog
-  - Contact me
+  * About me
+  * Skills
+  * Portfolio / my projects
+  * Blog
+  * Contact me
   
 I've included links to social media on the website. I also attachted link to my CV.
 ---
