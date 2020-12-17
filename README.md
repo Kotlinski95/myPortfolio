@@ -34,7 +34,7 @@ If you are interested in a contact, you can press the "Hire me" button which wil
 "Download CV" button will allow you to download my CV in PDF format.
 
 ---
-## Follow me and 
+## Follow me
 
 Stay on top of my achievements. Below is a link to the demo version of the portfolio and a link to my website:
 Github portfolio:
