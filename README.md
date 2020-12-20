@@ -28,6 +28,25 @@ The page includes a header with navigation that allows you to redirect to a spec
 5. The "contact" section contains a form that allows you to contact me via e-mail. I also put a contact phone number and a link to my website :)
 
 ---
+## Technology stack
+
+This page was created using:
+1. HTML5:
+  * popular tags compatible with HTML5,
+  * the Block, Element, Modifier (BEM) methodology,
+  * use of meta tags and .css files linking,
+  * links to social media and .pdf file with CV
+  
+2. CSS3:
+  * Box-model, cascading and CSS selectors,
+  * text styling, gradients, use of google fonts, external icons - fontawesome,
+  * CSS flexbox,
+  * positions absolute, fixed,
+  * key frames animations,
+  * form with a working data sending using formspree,
+  * Responsive Web Design - created for desktop and mobile devices.
+  
+---
 ## Contact with me
 
 If you are interested in a contact, you can press the "Hire me" button which will redirect you to the contact form.
